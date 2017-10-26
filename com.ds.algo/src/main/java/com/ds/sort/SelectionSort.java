@@ -1,6 +1,6 @@
-package com.ds.algo;
+package com.ds.sort;
 
-public class BubbleSort {
+public class SelectionSort {
 
 	
 	public static void main(String[] args) {
@@ -8,11 +8,11 @@ public class BubbleSort {
 		
 		int []array={2,4,5,6,78,1};
 		
-		bubbleSort(array);
+		selectionSort(array);
 		
 	}
 
-	private static void bubbleSort(int[] array) {
+	private static void selectionSort(int[] array) {
 		
 		
 		
@@ -22,13 +22,13 @@ public class BubbleSort {
 			
 			
 			
-			for (int j = 0; j < array.length-1; j++) {
+			for (int j = i; j < array.length; j++) {
 				
 				
-				if (array[j]>array[j+1]) {
-					int k = array[j+1];
-					array[j+1]=array[j];
-					array[j]=k;
+				if (array[i]>array[j]) {
+					int k = array[j];
+					array[j]=array[i];
+					array[i]=k;
 				}
 				
 				

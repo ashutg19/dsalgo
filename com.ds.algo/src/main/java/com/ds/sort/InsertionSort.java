@@ -1,4 +1,4 @@
-package com.ds.algo;
+package com.ds.sort;
 
 public class InsertionSort {
 
